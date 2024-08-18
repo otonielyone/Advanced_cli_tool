@@ -1,0 +1,35 @@
+{% extends "template.html" %}
+{% block title %} Home {% endblock %}
+
+{% block body %}
+<header class="site-header">
+       <nav class="bg-steel fixed-top">
+              {% if user.is_authenticated %}
+              <a class="login_button" style="float:right" id="logout" href="logout">Logout</a>   
+           {% endif %}
+       </nav>
+
+</header>
+
+
+<div class="container">
+       <div class="ttools-content-section">
+              <div style="text-align:center;">
+                     <div class="child" >
+                            <form method="POST">
+                            <h5 class=box-name-login> Welcome</h5></br>
+                            <a class="login_button" href="findrack"> Find Rack</a></form>
+                            <br>
+                            <form method="POST">
+                            <a class="login_button" href="quickscan"> Quick Scan</a></form>
+                            <br>
+                            <form method="POST">
+                            <a class="login_button" href="deepscan"> Deep Scan</a></form>
+                            <br>
+                            <form method="POST">
+                            <a class="login_button" href="sillytools"> Silly Tools</a></form>
+                     </div>
+              </div>
+       </div>
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "template.html" %}
+{% block title %}Login{% endblock %}
+
+{% block body %}
+<header class="site-header">
+    <nav class="bg-steel fixed-top">
+        {% if user.is_authenticated %}
+        <a class="login_button"  style="float:left" id="logout" href=/logout>Logout</a>   
+        {% endif %}
+    </nav>
+  </header>
+
+<!-- Login Form -->
+<div class="container">
+    <div class="login-content-section">
+        <div class="child" style="text-align:center">
+            <form method="POST">
+                <h5 class=box-name-login"> Access Site</h5></br>
+                {{ form.hidden_tag() }}    
+                {{ form.username(placeholder="username", style="text-align:center", class="input-box") }}<br/></br>
+                {{ form.password(placeholder="password", style="text-align:center", class="input-box") }}<br></br>
+                {{ form.submit(class="login_button") }}<br><br/>
+                <br>
+                {% if get_flashed_messages(): %}
+                    {{ get_flashed_messages() }}
+                {% endif %}
+                {% if form.errors: %}
+                    {{ form.errors }}
+                {% endif %}
+            </form>  
+            <!--form method="POST">
+                <h5 class=box-name-login> Access Account</h5></br>
+                <input placeholder="username" class="input-box" name="username" type="text"><br><br/>
+                <input placeholder= "password" class="input-box" name="password" type="password"><br></br>
+                <input class="login_button" type="submit" value="Log In" name="submit"><br/>
+            </form-->    
+    
+    
+        </div>
+    </div>
+</div>
+
+{% endblock %}

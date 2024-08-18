@@ -1,0 +1,215 @@
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #5f788a;
+}
+
+.bg-steel {
+  background-color: #5f788a;
+  height:35px;
+  align-items: center;
+} 
+
+.ref {
+  font-size: 9px;
+}
+
+.input-box {
+ font-size: 15px; 
+ text-align: left;
+ border-radius: 6px;
+ background: #FFFFFF;
+ border: 1px solid #dddddd;
+ color: #5f788a;
+ padding-left: 8px;
+ padding-right: 8px;
+ padding-top: 2px;
+ padding-bottom: 4px;
+}
+
+.input-box-mac {
+  text-align: center;
+  border-radius: 6px;
+  background: #FFFFFF;
+  border: 1px solid #dddddd;
+  color: #5f788a;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  height:100px;
+}
+
+.login_button {
+ background-color: #5f788a;
+ border-radius: 6px;
+ border: 1px solid #dddddd;
+ color: white;
+ opacity: 100;
+ font-size: 14px;
+ padding-left: 8px;
+ padding-right: 8px;
+ padding-top: 2px;
+ padding-bottom: 4px;
+ transform: translate(0 , 10%);
+}
+
+.login_button {
+  background-color: #5f788a;
+  border-radius: 6px;
+  border: 1px solid #dddddd;
+  color: white;
+  opacity: 100;
+  font-size: 14px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  transform: translate(0 , 10%);
+ }
+
+ 
+.register_button {
+ background-color: #5f788a;
+ border-radius: 6px;
+ border: 1px solid #dddddd;
+ color: white;
+ opacity: 100;
+ transform: translate(0, 0);
+ font-size: 14px;
+ padding-left: 8px;
+ padding-right: 8px;
+ padding-top: 2px;
+ padding-bottom: 4px;
+}
+
+topnav {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+ transform: translate(0 , 10%);
+ padding-left: 7px;
+ padding-right: 7px;
+ padding-top: 3px;
+ padding-bottom: 5px;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.login-content-section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  width: 300px;
+  height: 350px;
+}
+
+.register-content-section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  width: 300px;
+  height: 400px;
+}
+
+.ttools-content-section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  width: 500px;
+  height:425px;
+}
+
+
+.ttools-content-sectionip {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  width: 500px;
+  height:625px;
+}
+
+.mem-content-section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  width: 500px;
+  height: 375px;
+}
+.mem-section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  width: 500px;
+  height: 150px;
+}
+
+
+.scan-content-section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  width: 500px;
+  height: 325px;
+}
+.scan-section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  width: 500px;
+  height: 350px;
+}
+
+.disk-content-section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  width: 500px;
+  height: 375px;
+}
+.disk-section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  width: 500px;
+  height: 300px;
+}
+
+.inventory-content-section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  width: 500px;
+  height: 200px;
+}
+.inventory-dc6-section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  width: 500px;
+  height: 150px;
+}
+.inventory-iad1-section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dddddd;
+  width: 500px;
+  height: 150px;
+}

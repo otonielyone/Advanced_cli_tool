@@ -1,0 +1,23 @@
+{% extends "template.html" %}
+{% block title %} Convert Mac {% endblock %}
+
+{% block body %}
+<header class="site-header">
+       <nav class="bg-steel fixed-top">
+              {% if user.is_authenticated %}
+              <a class="login_button" style="float:left" id="home" href="/">Home</a>   
+              <a class="login_button" style="float:right" id="logout" href="logout">Logout</a>   
+           {% endif %}
+       </nav>
+</header>
+
+
+<div style="text-align:center;">
+       <div class="child" >
+              <form method="POST">
+              <textarea style="text-align:center" class="input-box-mac" rows = "100" cols = "50" name = "mac">
+              </textarea><br>
+              <input class="login_button" type="submit" value="Convert me" name="convertoutput"></form>        
+       </div>
+</div>
+{% endblock %}

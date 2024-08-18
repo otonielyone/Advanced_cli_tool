@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}{% endblock %} - Pandora Tools</title>
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}" />
+    <!-- My CSS -->
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}" />
+     <!-- JQUERY -->
+     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='js/jquery.min.js')}}" />
+     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='application.js')}}" /> 
+</head>
+<body>
+    
+
+    {% block body %} {% endblock %}
+
+<br>
+<br>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            {% if category == 'error' %}    
+                <div id="fadeout" style="text-align:center; font-size:60%" class="alert alert-danger alert-dismisable fade show role=alert">
+            {{ message }}
+                <!-- Bit of java to disapear after 2 seconds --> 
+                <script>setTimeout(function(){var msg = document.getElementById("fadeout");msg.parentNode.removeChild(msg);}, 2000);</script>
+                </div>
+                {% else %}
+                <div id="fadeout" style="text-align:center; font-size:60%" class="alert alert-success alert-dismisable fade show role=alert">
+             {{ message }}
+                 <!-- Bit of java to disapear after 1 seconds --> 
+                 <script>setTimeout(function(){var msg = document.getElementById("fadeout");msg.parentNode.removeChild(msg);}, 1000);</script>
+                </div>
+            {% endif %}
+        {% endfor %} 
+    {% endif %}  
+    {% endwith %}  
+  
+ </body>
+</html>
